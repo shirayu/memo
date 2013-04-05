@@ -1,4 +1,3 @@
-
 # GnuCash
 この情報は
 - GnuCash 2.4.10
@@ -10,17 +9,19 @@
 
 - cpanでFinance::Quoteがインストールされているディレクトリを確認する
 
-    sudo cpan
+```
+sudo cpan
     > i Finance::Quote
     INST_FILE    /usr/share/perl5/Finance/Quote.pm
+```
 
 - (INST_FILE)のディレクトリ以下の``Quote``に移動
 - sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Finance/Quote/YahooJapan.pm
 - ``FQ_LOAD_QUOTELET='-defaults YahooJapan' gnucash``で起動
 
 # 為替情報を表示できるようにする
-- 次のパッチをQuote.pmにあてる [参考](https://rt.cpan.org/Public/Bug/Display.html?id=74660#txn-1038090)
-
+- 次のパッチをQuote.pmにあてる [(参考)](https://rt.cpan.org/Public/Bug/Display.html?id=74660#txn-1038090)
+```
     --- lib/Finance/Quote.pm.orig   2012-02-15 10:28:52.000000000 +0100
     +++ lib/Finance/Quote.pm        2012-02-15 10:30:04.000000000 +0100
     @@ -246,13 +246,15 @@
@@ -43,5 +44,5 @@
     return undef unless $rate_element;
 
     my $exchange_rate=$rate_element->as_text;
-
+```
 
