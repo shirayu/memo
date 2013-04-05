@@ -25,3 +25,21 @@ https://plus.google.com/107334123935896432800/posts/KHoDsDssycf
 <blockquote class="twitter-tweet" lang="ja"><p>Unidicの品詞体系で係り受け解析やるのはいろいろ工夫が必要そう。短単位なので主辞を取り出しても係り受けに必要な情報が抜け落ちている可能性が大きい。また、可能性に基づく品詞体系なので曖昧性を解消する部分を構文解析でやらないといけない。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/100095910364725248" data-datetime="2011-08-07T06:48:19+00:00">8月 7, 2011</a></blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+#コーパス
+<blockquote class="twitter-tweet" lang="ja"><p>KNBCコーパスは、格解析の時と係り受け解析とでは違うユニットを使っているみたい。ちゃんとそのへんを考慮すると、まともな文節区切りになった。ライセンス的には問題なさそうなので、CaboChaの学習データに入れてみようかな。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/251695826160730113" data-datetime="2012-09-28T14:52:15+00:00">9月 28, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+#英語
+<blockquote class="twitter-tweet" data-in-reply-to="94021210060505088" lang="ja"><p>@<a href="https://twitter.com/zzzelch">zzzelch</a> 英語の構文解析の変遷を見ると面白いです。10年前はPTBスタイルでしたが、そりゃ本質的ではないし応用しにくいということで係り受けになりました。その最初の提唱者は松本先生(山田&松本論文)です。その後Nirve&Ryan, CoNLLと続き係り受けが成熟しました。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/94060426706419712" data-datetime="2011-07-21T15:05:27+00:00">7月 21, 2011</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-in-reply-to="94021210060505088" lang="ja"><p>@<a href="https://twitter.com/zzzelch">zzzelch</a> PTBスタイルは使いづらいという動機づけでもう一つ生まれたのはshallow parsingです。これは日本語の文節まとめ上げに近い。当時松本研ではshallow parsing+係り受けで日本語ライクにやってもいいのではといった議論がありました。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/94062297047248896" data-datetime="2011-07-21T15:12:53+00:00">7月 21, 2011</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-in-reply-to="94021210060505088" lang="ja"><p>@<a href="https://twitter.com/zzzelch">zzzelch</a> 実際にはshallow parsing も93%程度の精度しか出せないので、そのアプローチはエラーの積算問題があるので消えました。ただ shallow parsingという方法論や base phrase単位の分割はテキストマイニング等で応用されているようです</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/94062800850255872" data-datetime="2011-07-21T15:14:53+00:00">7月 21, 2011</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-in-reply-to="94021210060505088" lang="ja"><p>@<a href="https://twitter.com/zzzelch">zzzelch</a> 英語のパージングの歴史を見ると、結局、本質的・直感的な正しさと応用のしやすさで生き残るかどうか決まるのではないかと思います。そのどちらの側面からみても日本語単語単位は微妙... 例えば機能表現内の単語係り受けは本質的かと言われるとそうは思わない。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/94064387794538496" data-datetime="2011-07-21T15:21:12+00:00">7月 21, 2011</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+

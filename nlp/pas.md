@@ -1,4 +1,8 @@
 
+# 知識
+<blockquote class="twitter-tweet" lang="ja"><p>日本語述語項構造解析が重要だっていうわりには、みんなコーパス作りが先で、格交替を認識するのに基礎となる用言の知識(授受・自他・可能動詞交替)の情報をリッチにするといったことをまずやらないのはなぜなのか?Unidic・ipadicの情報だけでやれるとは到底思えない。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/244071389705936896" data-datetime="2012-09-07T13:55:28+00:00">9月 7, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 # 格交替
 
 <blockquote class="twitter-tweet" lang="ja"><p>~てあるで思い出したけど、「~てある」は、受け身のような格交替をする。「本が置いてある」の「が」は目的格だけど、受け身の助動詞はあらわれない。めんどくさー。ちなみに、現代日本語文法にもその記述はあり、NAIST コーパスは「てある」を特別扱いしている。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/203833750289780738" data-datetime="2012-05-19T13:05:27+00:00">5月 19, 2012</a></blockquote>

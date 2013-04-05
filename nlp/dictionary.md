@@ -30,3 +30,21 @@ KNPの格解析は大規模格フレーム辞書に基づいており，
 NAISTテキストコーパスには(ver1.5時点では)，
 項構造に対するはない．
 
+
+#Juman
+
+<blockquote class="twitter-tweet" lang="ja"><p>金曜日、BCCWJのとある中の人と議論。最後には本題からそれてUnidicのダメ出しで盛り上がる。まともに言語処理やってる人なら、Unidic/BCCWJが応用で必要な問題をほとんど解いていない(たくみに回避している)もどかしさを共有できる。結局JUMANがおすすめのこと</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/239723700335804416" data-datetime="2012-08-26T13:59:18+00:00">8月 26, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>Jumanの体系はやはり素晴らしいなー「食べるのが」と「食べるのです」の「の」の扱いがipadic/unidic だと、非自立名詞なのに対し、Jumanでは、前者は名詞、後者は助動詞「のだ」の活用としている。応用上これは区別してくれた方が嬉しい。前者は「こと」と言い換えられる</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/243002898584309760" data-datetime="2012-09-04T15:09:40+00:00">9月 4, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+#unidic
+<blockquote class="twitter-tweet" lang="ja"><p>unidicが非自立と自立動詞の区別をなくして可能性に基づく形式にしたのはやり過ぎな気がする。この区別は応用でめちゃめちゃ大事。「食べてみる」と「映画をみる」の「みる」が区別できないのは不便すぎる。そのうち可能性の部分を当てる解析器が出てきそう。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/177724714297458688" data-datetime="2012-03-08T11:57:28+00:00">3月 8, 2012</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="ja"><p>以前伝先生とお話したときに、Unidicでは伝統的な活用表による活用処理は破綻しているとおっしゃっていた。活用は全展開している。確かに同じ活用型・活用形でも表記がことなるものが散見される。活用表も便利なときがあるので、なんともかんとも。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/108054587918913536" data-datetime="2011-08-29T05:53:15+00:00">8月 29, 2011</a></blockquote>
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
