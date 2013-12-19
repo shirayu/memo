@@ -7,7 +7,7 @@
 
 #日本のマーケットの情報を表示できるようにする
 
-- cpanでFinance::Quoteがインストールされているディレクトリを確認する
+- ``cpan``で``Finance::Quote``がインストールされているディレクトリを確認する
 
 ```
 sudo cpan
@@ -16,7 +16,8 @@ sudo cpan
 ```
 
 - (INST_FILE)のディレクトリ以下の``Quote``に移動
-- sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Finance/Quote/YahooJapan.pm
+    - この場合は``/usr/share/perl5/Finance/Quote/``
+- ``sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Finance/Quote/YahooJapan.pm``
 - ``FQ_LOAD_QUOTELET='-defaults YahooJapan' gnucash``で起動
 
 # 為替情報を表示できるようにする
@@ -45,4 +46,5 @@ sudo cpan
 
     my $exchange_rate=$rate_element->as_text;
 ```
+- ``Finance::Quote 1.17``ではパッチをあてる必要はなかった
 
