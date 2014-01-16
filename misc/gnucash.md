@@ -5,7 +5,7 @@
 - Ubuntu 12.04
 での情報です
 
-#日本のマーケットの情報を表示できるようにする
+## 日本のマーケットの情報を表示できるようにする
 
 - ``cpan``で``Finance::Quote``がインストールされているディレクトリを確認する
 
@@ -20,7 +20,7 @@ sudo cpan
 - ``sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Finance/Quote/YahooJapan.pm``
 - ``FQ_LOAD_QUOTELET='-defaults YahooJapan' gnucash``で起動
 
-# 為替情報を表示できるようにする
+## 為替情報を表示できるようにする
 - 次のパッチをQuote.pmにあてる [(参考)](https://rt.cpan.org/Public/Bug/Display.html?id=74660#txn-1038090)
 ```
     --- lib/Finance/Quote.pm.orig   2012-02-15 10:28:52.000000000 +0100
@@ -47,4 +47,20 @@ sudo cpan
     my $exchange_rate=$rate_element->as_text;
 ```
 - ``Finance::Quote 1.17``ではパッチをあてる必要はなかった
+
+## 表示項目
+次の項目を表示しておけば良さそう．
+貸借残高が赤字になっていないか注意．
+（特に銀行口座．赤字だとクレジットカードの引き落としが失敗する．）
+
+- 勘定科目名
+- 説明
+- 現在の残高(JPY)
+    - 現時点の残高
+- 貸借残高(JPY)
+    - 最終的な残高
+- 貸借残高(JPY)
+    - 最終的な残高
+- 将来の最小(JPY)
+    - 将来，残高のとりうる最小値
 
