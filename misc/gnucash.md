@@ -21,6 +21,7 @@ sudo cpan
 - ``FQ_LOAD_QUOTELET='-defaults YahooJapan' gnucash``で起動
 
 ## 為替情報を表示できるようにする
+- (注) ``Finance::Quote 1.17``ではパッチをあてる必要はなかった
 - 次のパッチをQuote.pmにあてる [(参考)](https://rt.cpan.org/Public/Bug/Display.html?id=74660#txn-1038090)
 ```
     --- lib/Finance/Quote.pm.orig   2012-02-15 10:28:52.000000000 +0100
@@ -46,7 +47,14 @@ sudo cpan
 
     my $exchange_rate=$rate_element->as_text;
 ```
-- ``Finance::Quote 1.17``ではパッチをあてる必要はなかった
+
+## マーケット情報が取得できないとき
+- [Finance::Quote](http://finance-quote.sourceforge.net/)のアップデートを行なってみる
+    - 突然取得できなくなったときは，[フォーラム](http://finance-quote.sourceforge.net/discussion.html)で話題になっていないかチェックする
+```
+sudo cpan
+upgrade Finance::Quote
+```
 
 ## 表示項目
 次の項目を表示しておけば良さそう．
