@@ -5,7 +5,7 @@
 <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-https://plus.google.com/107334123935896432800/posts/KHoDsDssycf
+[単語単位の係り受けの違和感](https://plus.google.com/107334123935896432800/posts/KHoDsDssycf)
 
 <blockquote class="twitter-tweet" data-in-reply-to="176833781645320193" lang="ja"><p>@<a href="https://twitter.com/klmquasi">klmquasi</a> 体言と用言で変えるのには賛成です。機能表現は英語の助動詞みたいに振る舞うので一つの独立とした語として扱ったほうがいいのかもしれません。</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/177236509194326016" data-datetime="2012-03-07T03:37:31+00:00">3月 7, 2012</a></blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

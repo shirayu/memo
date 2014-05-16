@@ -24,7 +24,7 @@
 <blockquote class="twitter-tweet" lang="ja"><p>IMEのSharedTaskが議題になったが、単にひらがな→漢字の精度比較だと微妙。その手の精度は成熟しているし、あまり役に立たないのも経験済み。下手したらSMT(Moses)とかいう人がいそうでIMEらしさがない。サジェスト・学習・スペルコレクション・UX・圧縮あたりが面白い</p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/136444928707399680" data-datetime="2011-11-15T14:06:20+00:00">11月 15, 2011</a></blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-- [スマートフォン上のIMEの変換精度とはどうあるべきかを考えさせられる動画](https://plus.google.com/107334123935896432800)
+- [スマートフォン上のIMEの変換精度とはどうあるべきかを考えさせられる動画](https://plus.google.com/107334123935896432800/posts/fAytqvRXgqo)
 
 # 後続語の予測処理
 <blockquote class="twitter-tweet" data-in-reply-to="128811290033520640" lang="ja"><p>NLP2011 での以下の発表が近いのかな。C5-4 頻出文脈に基づく分野依存入力支援 ○海野裕也, 坪井祐太 (日本IBM) RT @<a href="https://twitter.com/nokuno">nokuno</a> 最新版のmozcが予測変換でSVMを使うのをやめて，確率と長さの積を使うようになっていたようだ．興味深い</p>&mdash; Zelchさん (@zzzelch) <a href="https://twitter.com/zzzelch/status/128820152706924545" data-datetime="2011-10-25T13:08:12+00:00">10月 25, 2011</a></blockquote>
