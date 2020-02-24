@@ -1,6 +1,6 @@
 
 # windowsタブレットの設定
 
-- [setup](setup)
-- [shell](shell)
+- [setup](setup.md)
+- [shell](shell.md)
 

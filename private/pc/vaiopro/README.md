@@ -7,13 +7,13 @@
 Debianをインストールして常用することにした．
 その際のメモです．
 
-- [仕様](spec)
-- [Debianのインストール](install)
-- [設定](setting)
-- [VM](vm)
-- [ディスプレイ](display)
+- [仕様](spec.md)
+- [Debianのインストール](install.md)
+- [設定](setting.md)
+- [VM](vm.md)
+- [ディスプレイ](display.md)
 
 
 ## その他
-- [京大ネットワークKUINSの設定](kuins)
+- [京大ネットワークKUINSの設定](kuins.md)
 
