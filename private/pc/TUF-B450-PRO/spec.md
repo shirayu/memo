@@ -5,15 +5,15 @@
 | -- | -- | -- | -- | -- |
 | マザーボード | [Asus TUF B450-PRO GAMING](https://www.asus.com/jp/Motherboards/TUF-B450-PRO-GAMING/specifications/) | ビックカメラ | 12,980 (約5900pt付き) | |
 | CPU  | Ryzen 5 3600 | Amazon |  26,644 (1066pt付) | 65W.第3世代, 6コア12スレッド|
-| CPUファン | [虎徹 SCKTT-1000](http://kakaku.com/item/K0000585348/) | amazon | 3435 (流用) | 5.3～28dBA. |
+| CPUファン | 付属品 |  | | |
 | メモリ | CFD Crucial (Micron製) W4U3200CM-16G | DDR4-3200, 16GBx2 | amazon | 16,200 (162pt付) | |
 | ビデオカード | [GT1030-SL-2G-BRK](http://kakaku.com/item/K0000969293/) | amazon | 10326 (流用) | |
 | サウンドカード | オンボ | - | - | |
 | M.2 SSD | [ADATA XPG SX8200 Pro ASX8200PNP-512GT-C](https://www.amazon.co.jp/dp/B07SZ81FPM) | amazon |  7,599 | 500GB.PCIe3.0×4 NVMe1.3.エレコムOEM |
 | 外付け光学ドライブ | BRXL-PC6VU2-BKC | buffalo | 4,882 (流用) | |
 | OS | なし | - | - | debian-testingを入れる|
-| ケース | [Define R5 FD-CA-DEF-R5](http://kakaku.com/item/J0000014266/) | TSUKUMO | 12,045 (流用)  | |
-| 電源 | [Antec NeoECO NE650C](http://kakaku.com/item/K0000710142/) | TSUKUMO | 6,535 (流用) | 650W/80PLUS BRONZE |
+| ケース | [Define R5 FD-CA-DEF-R5](http://kakaku.com/item/J0000014266/) | TSUKUMO | 10,360  | 並行作業用に追加購入 |
+| 電源 | [NeoECO GOLD NE750 GOLD](https://kakaku.com/item/K0001019734/spec/#tab) | 10,580 (10%pt) | 6,535 | ATX12V 2.4 |
 
 一部は以前からの流用
 
@@ -56,6 +56,5 @@
 | [LG 43UD79T-B](http://kakaku.com/item/K0000961786/spec/) |42.5 | IPS | 4K（3840x2160） | 70W | 0.245 mm |15.9kg | 2018/8 |
 
 ### 履歴
+
 - 2012/2
-  - 製作時の支出は合計 63,423 円 (約7,100pt付)
-  - 流用品は合計 37,223円分
