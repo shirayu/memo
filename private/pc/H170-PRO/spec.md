@@ -6,9 +6,9 @@
 
 | 項目  | 型番 | 購入先 | 価格 | 備考 |
 | -- | -- | -- | -- | -- |
+| マザーボード | [Asus H170-PRO](http://kakaku.com/item/K0000808296/) | sofmap | 12830 | |
 | CPU   | [Core i3 6100](http://kakaku.com/item/K0000832917/)| TSUKUMO| 15088  | Skylake世代, 2コア4スレッド|
 | CPUファン | [虎徹 SCKTT-1000](http://kakaku.com/item/K0000585348/) | amazon | 3435 | 5.3～28dBA |
-| マザーボード | [Asus H170-PRO](http://kakaku.com/item/K0000808296/) | sofmap | 12830 | |
 | メモリ | [W4U2133PS-8G](http://kakaku.com/item/K0000829423) | amazon | 10700  | DDR4 PC4-17000, 8GB 2枚 |
 | ビデオカード | [GT1030-SL-2G-BRK](http://kakaku.com/item/K0000969293/) | amazon | 10326 | |
 | サウンドカード | オンボ | - | - | |
@@ -72,4 +72,5 @@
 - 2018/8
     - 4Kディスプレイ [43UD79T-B](http://kakaku.com/item/K0000961786/)を62,372円で購入
     - グラフィックボード[GT1030-SL-2G-BRK](http://kakaku.com/item/K0000969293/)を10,326円で購入
-
+- 2020/2
+    - 新PCへ移行
