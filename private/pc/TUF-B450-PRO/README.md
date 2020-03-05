@@ -9,3 +9,4 @@
 CPUは評判の良いAMDに変えてみる．
 
 - [仕様](spec.md)
+- [インストール](install.md)
