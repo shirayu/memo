@@ -1,15 +1,17 @@
 
-# 仕様
+#a 仕様
 
 | 項目  | 型番 | 購入先 | 価格 | 備考 |
 | -- | -- | -- | -- | -- |
 | マザーボード | [Asus TUF B450-PRO GAMING](https://www.asus.com/jp/Motherboards/TUF-B450-PRO-GAMING/specifications/) | ビックカメラ | 12,980 (約5900pt付き) | |
-| CPU  | Ryzen 5 3600 | Amazon |  26,644 (1066pt付) | 65W.第3世代, 6コア12スレッド|
-| CPUファン | 付属品 |  | | |
+| CPU  | Ryzen 5 3600 | Amazon |  26,644 (1066pt付) | 65W.第3世代, 6コア12スレッド.グラフィックスなし|
+| CPUファン | 虎徹 Mark II | Amazon | 4,106 (164pt付)| サイドフロー |
+| CPUグリス | Thermal Grizzly Kryonaut 1g | Amazon | 767 (31pt付) |  |
 | メモリ | CFD Crucial (Micron製) W4U3200CM-16G | DDR4-3200, 16GBx2 | amazon | 16,200 (162pt付) | |
 | ビデオカード | [GT1030-SL-2G-BRK](http://kakaku.com/item/K0000969293/) | amazon | 10326 (流用) | |
 | サウンドカード | オンボ | - | - | |
 | M.2 SSD | [ADATA XPG SX8200 Pro ASX8200PNP-512GT-C](https://www.amazon.co.jp/dp/B07SZ81FPM) | amazon |  7,599 | 500GB.PCIe3.0×4 NVMe1.3.エレコムOEM |
+| M.2 ヒートシンク | 長尾製作所 SS-M2S-HS01 | Amazon | 1,055 (11pt付) | |
 | 外付け光学ドライブ | BRXL-PC6VU2-BKC | buffalo | 4,882 (流用) | |
 | OS | なし | - | - | debian-testingを入れる|
 | ケース | [Define R5 FD-CA-DEF-R5](http://kakaku.com/item/J0000014266/) | TSUKUMO | 10,360  | 並行作業用に追加購入 |
@@ -55,6 +57,18 @@
 | [ASUS VE248HR](http://kakaku.com/item/K0000874256/spec/) | 24 | TN | FullHD (1920x1080) | 35W | 0.2768mm |4.4kg | 2016/9 |
 | [LG 43UD79T-B](http://kakaku.com/item/K0000961786/spec/) |42.5 | IPS | 4K（3840x2160） | 70W | 0.245 mm |15.9kg | 2018/8 |
 
-### 履歴
 
-- 2012/2
+### 備品
+
+- 日本語キーボード 947円
+- マウス 403円
+
+### 設定
+
+- メモリの周波数はデフォルトでは2666 MHz
+    - BIOS設定で変更する
+- マザーボードによっては第3世代Ryzenに対応している最初にBIOSが入っていない場合がある
+    - その場合，そもそもBIOSが起動できない
+    - AMD CPU Athlon 200GEを5,706円で買ってアップデートした
+- 新し目の構成の場合，Linuxカーネルは新しいものが良さそう
+
