@@ -137,6 +137,7 @@ rsync -avP ~/Documents Downloads kotonoha:~
     - [トポロジーを適当に設定](https://www.alprovs.com/wordpress/?p=605)
     - [CPUごとの使用率を確認する方法](https://piyokabe.net/pc/win10/taskmanager-cpu-thread/)
     - ネットワークの起動
+    - [固定IPアドレス](https://kana-linux.info/linux/kvm%E3%81%ABdhcp%E3%81%A7%E5%9B%BA%E5%AE%9Aip%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B)
 ```
 sudo virsh net-autostart default                                            
 sudo virsh net-start default                                  
