@@ -53,6 +53,14 @@ sudo adduser $USER libvirt
 sudo aptitude install parallel && mkdir ~/.parallel && touch ~/.parallel/will-cite
 sudo update-alternatives --config editor #vim-noxを選択
 pip3 install lxml tqdm selenium you-get youtube-dl gallery-dl gevent gevent-websocket websocket-client flake8 mypy isort autopep8
+
+# jvgrep
+TMPDIR=$(mktemp -d)
+curl -s https://api.github.com/repos/mattn/jvgrep/releases/latest  \
+    | grep 'browser_download_url.*linux_amd64.tar.gz"' \
+    | cut -d : -f 2,3 | tr -d \" | xargs -n 1 curl -sSL \
+    | tar -xz --strip-components=1 -C "${TMPDIR}" \
+    && mv "${TMPDIR}/jvgrep" ~/local/bin && rm -rf "${TMPDIR}"
 ```
 
 ## 追加インストール
