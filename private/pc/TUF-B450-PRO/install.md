@@ -61,6 +61,10 @@ curl -s https://api.github.com/repos/mattn/jvgrep/releases/latest  \
     | cut -d : -f 2,3 | tr -d \" | xargs -n 1 curl -sSL \
     | tar -xz --strip-components=1 -C "${TMPDIR}" \
     && mv "${TMPDIR}/jvgrep" ~/local/bin && rm -rf "${TMPDIR}"
+
+curl -sL https://deb.nodesource.com/setup_12.x | bash -
+sudo apt-get install -y nodejs
+npm install -g eslint esformatter typescript typescript-language-server
 ```
 
 ## 追加インストール
