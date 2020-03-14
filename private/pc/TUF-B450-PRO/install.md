@@ -1,4 +1,3 @@
-
 # Debianのインストール
 
 
@@ -48,7 +47,7 @@ sudo apt-get install amd64-microcode firmware-linux-nonfree firmware-realtek nvi
 sudo reboot
 
 # 最低限のソフトインストール
-sudo apt install net-tools ssh rsync gnome-terminal dsh nkf curl mcomix pandoc pandoc-citeproc pdfshuffler pdftk uuid-runtime gparted ntfs-3g ntp wdiff colordiff peco nvtop jq zsh unzip unrar unar paco htop lv vim-nox tmux build-essential swig autoconf automake libtool tinycdb libcdb-dev libncurses-dev aptitude git git-core git-svn dkms vlc libdvdcss2 ffmpeg python3-pip seahorse wget cmake encfs sqlite3 python3-gpg gnucash cpanminus libdbd-sqlite3 strace libusb-dev libusb-1.0-0-dev virt-manager easytag android-tools-adb qrencode krita krita-l10n
+sudo apt install net-tools ssh rsync gnome-terminal dsh nkf curl mcomix pandoc pandoc-citeproc pdfshuffler pdftk uuid-runtime gparted ntfs-3g ntp wdiff colordiff peco nvtop jq zsh unzip unrar unar paco htop lv vim-nox tmux build-essential swig autoconf automake libtool tinycdb libcdb-dev libncurses-dev aptitude git git-core git-svn dkms vlc libdvdcss2 ffmpeg python3-pip seahorse wget cmake encfs sqlite3 python3-gpg gnucash cpanminus libdbd-sqlite3 strace libusb-dev libusb-1.0-0-dev virt-manager easytag android-tools-adb qrencode krita krita-l10n rtmpdump
 sudo adduser $USER libvirt
 sudo aptitude install parallel && mkdir ~/.parallel && touch ~/.parallel/will-cite
 sudo update-alternatives --config editor #vim-noxを選択
@@ -84,6 +83,7 @@ npm install -g eslint esformatter typescript typescript-language-server
 - スクリーンショットの保存先を変更
 - オーバレイを無効
 - 「ファイルマネージャーから起動された場合、単一インスタンスを実行」のチェックを外し，多重起動を有効にする
+- ``ツール→インタフェースのカスタマイズ``で必要なボタンを配置
 
 ### GnuCash
 
@@ -108,6 +108,8 @@ sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Fin
     - 最近使ったファイルの記録をしない
 - キーボード->レイアウト->オプションで CapsLockをCtrl扱いにする
 - 最近使ったファイルの記録をしない
+    - ``設定 -> 個人情報``
+
 ```
 echo > ~/.local/share/recently-used.xbel
 echo gtk-recent-files-max-age=0 >> ~/.gtkrc-2.0
