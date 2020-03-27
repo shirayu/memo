@@ -14,14 +14,14 @@ su
 gpasswd -a yuta-h sudo
 
 # mozc設定:  再起動必要
-apt-get -y installfcitx-mozc aptitude
+apt-get -y install fcitx-mozc aptitude
 #GUIで変更
-sudo aptitude purge uim-mozc
+ptitude purge uim-mozc
 
 # オートログインの設定
 # https://yuji.noizumi.org/blog/2016/09/08/ubuntu-16-04%E3%81%AE%E8%87%AA%E5%8B%95%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%8C%E5%8A%B9%E3%81%8B%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F%E3%80%82/
-sudo groupadd -r autologin
-sudo  gpasswd -a yuta-h autologin
+groupadd -r autologin
+gpasswd -a yuta-h autologin
 ```
 - 再起動
 - mozc設定
@@ -47,19 +47,20 @@ sudo apt-get install amd64-microcode firmware-linux-nonfree firmware-realtek nvi
 sudo reboot
 
 # 最低限のソフトインストール
-sudo apt install net-tools ssh rsync gnome-terminal dsh nkf curl mcomix pandoc pandoc-citeproc pdfshuffler pdftk uuid-runtime gparted ntfs-3g ntp wdiff colordiff peco nvtop jq zsh unzip unrar unar paco htop lv vim-nox tmux build-essential swig autoconf automake libtool tinycdb libcdb-dev libncurses-dev aptitude git git-core git-svn dkms vlc libdvdcss2 ffmpeg python3-pip seahorse wget cmake encfs sqlite3 python3-gpg gnucash cpanminus libdbd-sqlite3 strace libusb-dev libusb-1.0-0-dev virt-manager easytag android-tools-adb qrencode krita krita-l10n rtmpdump
+sudo apt install net-tools ssh rsync gnome-terminal dsh nkf curl mcomix pandoc \
+    pandoc-citeproc pdfshuffler pdftk uuid-runtime gparted ntfs-3g ntp wdiff colordiff \
+    peco nvtop jq zsh unzip unrar unar paco htop lv vim-nox tmux build-essential swig \
+    autoconf automake libtool tinycdb libcdb-dev libncurses-dev aptitude git git-core \
+    git-svn dkms vlc libdvdcss2 ffmpeg python3-pip seahorse wget cmake encfs \
+    sqlite3 python3-gpg gnucash cpanminus libdbd-sqlite3 strace libusb-dev libusb-1.0-0-dev \
+    virt-manager easytag android-tools-adb qrencode krita krita-l10n rtmpdump golang audacity asunder
 sudo adduser $USER libvirt
 sudo aptitude install parallel && mkdir ~/.parallel && touch ~/.parallel/will-cite
 sudo update-alternatives --config editor #vim-noxを選択
 pip3 install lxml tqdm selenium you-get youtube-dl gallery-dl gevent gevent-websocket websocket-client flake8 mypy isort autopep8
 
-# jvgrep
-TMPDIR=$(mktemp -d)
-curl -s https://api.github.com/repos/mattn/jvgrep/releases/latest  \
-    | grep 'browser_download_url.*linux_amd64.tar.gz"' \
-    | cut -d : -f 2,3 | tr -d \" | xargs -n 1 curl -sSL \
-    | tar -xz --strip-components=1 -C "${TMPDIR}" \
-    && mv "${TMPDIR}/jvgrep" ~/local/bin && rm -rf "${TMPDIR}"
+go get github.com/mattn/jvgrep
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 curl -sL https://deb.nodesource.com/setup_12.x | bash -
 sudo apt-get install -y nodejs
