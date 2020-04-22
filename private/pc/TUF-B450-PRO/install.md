@@ -54,7 +54,7 @@ sudo apt install net-tools ssh rsync gnome-terminal dsh nkf curl mcomix pandoc \
     git-svn dkms vlc libdvdcss2 ffmpeg python3-pip seahorse wget cmake encfs \
     sqlite3 python3-gpg gnucash cpanminus libdbd-sqlite3 strace libusb-dev libusb-1.0-0-dev \
     virt-manager easytag android-tools-adb qrencode krita krita-l10n rtmpdump golang audacity asunder \
-    whois
+    whois python3-venv
 sudo adduser $USER libvirt
 sudo aptitude install parallel && mkdir ~/.parallel && touch ~/.parallel/will-cite
 sudo update-alternatives --config editor #vim-noxを選択
