@@ -111,6 +111,7 @@ sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Fin
 - キーボード->レイアウト->オプションで CapsLockをCtrl扱いにする
 - 最近使ったファイルの記録をしない
     - ``設定 -> 個人情報``
+- ファイルブラウザ(nemo)の日付書式
 
 ```
 echo > ~/.local/share/recently-used.xbel
