@@ -161,6 +161,7 @@ sudo virsh net-start default
 
 - ルーターのポート変換の変更
 - fstabの設定
-- fstabの設定
     - ``sudoedit /etc/hdparm.conf``
+- プライマリティスプレイを変更するよう自動起動コマンドに登録
+    - `` xrandr --output HDMI-0 --primary``
 
