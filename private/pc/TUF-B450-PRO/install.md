@@ -58,7 +58,7 @@ sudo apt install net-tools ssh rsync gnome-terminal dsh nkf curl mcomix pandoc \
 sudo adduser $USER libvirt
 sudo aptitude install parallel && mkdir ~/.parallel && touch ~/.parallel/will-cite
 sudo update-alternatives --config editor #vim-noxを選択
-pip3 install lxml tqdm selenium you-get youtube-dl gallery-dl gevent gevent-websocket websocket-client flake8 mypy isort autopep8
+pip3 install lxml tqdm selenium you-get youtube-dl gallery-dl gevent gevent-websocket websocket-client flake8 mypy isort autopep8 streamlink
 
 go get github.com/mattn/jvgrep
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -122,6 +122,7 @@ echo echo -e "[Settings]\ngtk-recent-files-max-age=0" >> ~/.config/gtk-3.0/setti
     - メニューの表示で「小さな画像を引き伸ばす」を有効に
     - 挙動->最近開いたファイルの情報を保存しない
     - 自動的に次のディレクトリを開くをオフ
+    - ``/dev/shm``をキャッシュディレクトリに
 
 
 ### データ移行
