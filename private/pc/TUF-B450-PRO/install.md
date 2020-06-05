@@ -108,6 +108,7 @@ sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Fin
     - F1を押すとfalseコマンドを実行するようにする
     - PrintScreenへの割当を消す
     - 最近使ったファイルの記録をしない
+    - サスペンド等の割り当てを消す
 - キーボード->レイアウト->オプションで CapsLockをCtrl扱いにする
 - 最近使ったファイルの記録をしない
     - ``設定 -> 個人情報``
