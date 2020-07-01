@@ -1,5 +1,6 @@
 
 # KUINS
+
 京大ネットワークKUINSに接続するには設定が必要
 
 ## システム全体のプロキシ設定
@@ -10,7 +11,7 @@
 デスクトップマシン等，常にKUINSに接続するマシンは，この設定をしておくと楽．
 ``/etc/profile.d/proxy.sh``を作り，システム全体に効く環境変数を設定する．
 
-```
+```sh
 #!/bin/sh
 PROXY="proxy.kuins.net:8080"
 export http_proxy="$PROXY"
@@ -23,38 +24,40 @@ export no_proxy="127.0.0.1,localhost"
 export NO_PROXY="$no_proxy"
 ```
 
-
 ## MIAKO NET
+
 VPN(PPTP)で接続する必要がある．
 PPPTじゃなくてPPTPであることに注意．
 
-```
+```sh
 sudo aptitude install network-manager-pptp-gnome
 ```
 
 その後
-```
+
+```sh
 nm-connection-editor
 ```
+
 で設定画面を起動し，VPNの中のPPTPを選択して，設定する．
 
-
 ## Windowsでの設定
+
 IEの設定を読み込む
-```
+
+```sh
 netsh winhttp import proxy source=ie
 ```
 
 リセットする
-```
+
+```sh
 netsh winhttp reset proxy
 ```
 
 - [参考](https://www.upken.jp/kb/proxy-for-windowsupdate.html)
 
-
 ## Links
+
 - [プロキシ下でLinuxを使う際のメモ](http://lambdalisue.hatenablog.com/entry/2013/06/25/140630)
 - [Ubuntuを利用している場合のPPTP接続設定例](http://www.kuins.kyoto-u.ac.jp/ja/index.php?Ubuntu%A4%C7PPTP%C0%DC%C2%B3)
-
-

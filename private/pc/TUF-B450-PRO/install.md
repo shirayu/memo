@@ -1,6 +1,5 @@
 # Debianのインストール
 
-
 ## 初期設定
 
 - 電源管理->ディスプレイの電源を切るまでの時間: なし
@@ -23,10 +22,10 @@ ptitude purge uim-mozc
 groupadd -r autologin
 gpasswd -a yuta-h autologin
 ```
+
 - 再起動
 - mozc設定
 - 固定IP設定
-
 
 ## apt編集
 
@@ -69,14 +68,15 @@ npm install -g eslint esformatter typescript typescript-language-server
 ```
 
 ## 追加インストール
+
 - google-chrome
 - mendeley
 - dropbox
     - 一度``rsync``してから実行
     - 競合を作らないように．完全に前のマシンのdropbox同期は止めておく
 
-
 ## その他の設定
+
 ### VLCの設定
 
 - ``最近再生された項目を保存``を外す
@@ -96,10 +96,13 @@ sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Fin
 ```
 
 ### ほか
+
 - [ターミナルの設定](https://zv-louis.hatenablog.com/entry/2018/05/28/120000)
+
 ```sh
  gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ font "VL Gothic 14"
 ```
+
 - 各種フォルダの名前を変更
     - ``LANG=C xdg-user-dirs-gtk-update``
 - seahorseをインストールして，自動起動するようにする．
@@ -114,17 +117,17 @@ sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Fin
     - ``設定 -> 個人情報``
 - ファイルブラウザ(nemo)の日付書式
 
-```
+```sh
 echo > ~/.local/share/recently-used.xbel
 echo gtk-recent-files-max-age=0 >> ~/.gtkrc-2.0
 echo echo -e "[Settings]\ngtk-recent-files-max-age=0" >> ~/.config/gtk-3.0/settings.ini
 ```
+
 - mcomix
     - メニューの表示で「小さな画像を引き伸ばす」を有効に
     - 挙動->最近開いたファイルの情報を保存しない
     - 自動的に次のディレクトリを開くをオフ
     - ``/dev/shm``をキャッシュディレクトリに
-
 
 ### データ移行
 
@@ -153,11 +156,11 @@ rsync -avP ~/Documents Downloads kotonoha:~
     - [CPUごとの使用率を確認する方法](https://piyokabe.net/pc/win10/taskmanager-cpu-thread/)
     - ネットワークの起動
     - [固定IPアドレス](https://kana-linux.info/linux/kvm%E3%81%ABdhcp%E3%81%A7%E5%9B%BA%E5%AE%9Aip%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B)
-```
-sudo virsh net-autostart default                                            
-sudo virsh net-start default                                  
-```
 
+```sh
+sudo virsh net-autostart default
+sudo virsh net-start default
+```
 
 ## その他
 
@@ -165,5 +168,4 @@ sudo virsh net-start default
 - fstabの設定
     - ``sudoedit /etc/hdparm.conf``
 - プライマリティスプレイを変更するよう自動起動コマンドに登録
-    - `` xrandr --output HDMI-0 --primary``
-
+    - ``xrandr --output HDMI-0 --primary``

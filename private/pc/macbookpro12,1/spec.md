@@ -1,13 +1,16 @@
 
 # 仕様
+
 - OS X Yosemite 10.10.3
 - Retina, 13-inchi, Early 2015
 
 ## wifi
+
 - カードの種類：  AirMac Extreme  (0x14E4, 0x133)
 - ファームウェアのバージョン：  Broadcom BCM43xx 1.0 (7.15.166.24.3)
 
 ## グラフィック
+
 - チップセットのモデル：    Intel Iris Graphics 6100
 - 種類：    GPU
 - VRAM（ダイナミック、最大）：    1536 MB
@@ -24,10 +27,3 @@
 - バージョン：  6.22
 - 製造元：  Apple Inc.
 - 場所 ID：   0x01000000
-
-
-
-
-
-
-

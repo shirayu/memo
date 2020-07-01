@@ -1,5 +1,4 @@
 
-
 # Macの環境設定
 
 - 基本的にdebianを使うが，オフィスソフト等macを使うことがあるので，macもある程度快適に使えるように設定する
@@ -11,6 +10,7 @@
 - しかし，これでもダメなことが多いので[MuteCon](http://homepage1.nifty.com/macbs/download.htm#MuteCon)を使って起動時に自動的にミュート状態にする
 
 ## キーボード
+
 - google日本語入力を入れる
 - システム環境設定の「キーボード」の「修飾キー」
     - ``Caps Lock -> ^Control``
@@ -21,33 +21,40 @@
     - 入力ソースの切り替えを``Ctrl+Space``にする(修飾キー変換しているので表示は``Command+Space``になるが)
 
 ## その他
+
 - finder
     - よく使う項目にHOMEとencfsを追加
     - ステータスバーを表示
     - [デフォルトをHOMEにする](http://inforati.jp/apple/mac-tips-techniques/system-hints/how-to-set-the-default-folder-of-new-macos-finder-window.html)
     - ``.DS_Store``を作らないようにする
-```
+
+```sh
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 killall Finder
 ```
+
 - Spotlightのアイコンを消す
-```
+
+```sh
 sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 ```
+
 - トラックパッドを逆にする
 - サウンドを表示する
 - dockの表示遅延をなくす
-```
+
+```sh
 defaults write com.apple.dock autohide-time-modifier -int 0; Killall Dock
 ```
 
 ## ソフトウェア
+
 - vlc
 - iTerm2
     - VLゴシックをダウンロード/インストールして，フォントを変更する
 - google chrome
 - skype
-- CotEditor 
+- CotEditor
 - dropbox
 - [shiftlt](https://github.com/fikovnik/ShiftIt)
     - Keyの入れ替えを行っていないOptionを修飾キーとして設定する
@@ -57,6 +64,7 @@ defaults write com.apple.dock autohide-time-modifier -int 0; Killall Dock
 - slack
 
 ### iTerm2
+
 - キーボードの設定 (Keysタブ)
     - Remap Modifier Keys: 日本語キーボード
         - ``Command``を``Left Ctrl``扱いにする
@@ -84,7 +92,7 @@ defaults write com.apple.dock autohide-time-modifier -int 0; Killall Dock
 
 ### homebrew
 
-```
+```sh
 brew doctor #設定のチェック
 brew update
 brew install tmux htop
@@ -102,20 +110,10 @@ brew cask install mactex
 ```
 
 ### encfs
-```
+
+```sh
 brew install homebrew/fuse/encfs
 brew install Caskroom/cask/osxfuse
 
 encfs ~/Dropbox/Private ~/Private
 ```
-
-### その他
-
-<!-- ext4fuse -->
-
-## Links
-
-- http://yuroyoro.hatenablog.com/entry/20120211/1328930819
-- http://www.carsten-mielke.com/redquits.html
-- http://loumo.jp/wp/archive/20140627234425/
-- http://isseium.hateblo.jp/entry/20110101/1293899881

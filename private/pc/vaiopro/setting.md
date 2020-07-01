@@ -1,4 +1,3 @@
- 
 
 # その他の設定
 
@@ -8,15 +7,18 @@
 
 - ログイン画面で「gnomeクラシック」を選択してログインする
     - 以降gdm3+gnome3
-```
+
+```sh
 $ uname -a
 Linux tamako 3.13-1-amd64 #1 SMP Debian 3.13.5-1 (2014-03-04) x86_64 GNU/Linux
 ```
 
 ## 初期設定
+
 - networkの設定
 - 基本設定
-```
+
+```sh
 update-alternatives --config editor
 visudo
   >>yuta-h    ALL=(ALL)       ALL
@@ -25,21 +27,24 @@ vim /etc/ssh/sshd_config
 ```
 
 ### 基本環境設定
+
 - 基本ツール
-```
+
+```sh
 sudo aptitude install zsh screen unzip unrar paco htop lv vim-nox tmux
 chsh -s `which zsh`
 ```
 
 - ビルド関連ツール
-```
+
+```sh
 sudo aptitude install build-essential swig automake libtool tinycdb libcdb-dev
 sudo aptitude install git git-svn
 ```
 
-
 ### いろいろなもののインストール
-```
+
+```sh
 sudo aptitude install ttf-vlgothic mozc-utils-gui fcitx fcitx-mozc cairo-clock dsh nkf
 sudo aptitude install curl
 sudo aptitude install mimms
@@ -58,19 +63,23 @@ sudo aptitude install gparted ntfs-3g
 sudo aptitude install ntp
 sudo aptitude install wdiff colordiff
 ```
+
 - 別マシンからDropboxをscpして，設定ファイルのsimlinkを作る
 - 再ログイン
 
-
 ## gnome3の設定
+
 - 各種フォルダの名前を変更
-```
+
+```sh
 LANG=C xdg-user-dirs-gtk-update
 ```
 
 ### gnome-tweak-toolで設定
+
 - gnome shell
-```
+
+```txt
 User themes = on
 show date in clock = on
 タイトルバーのボタン = ALL
@@ -79,12 +88,14 @@ dynamic workspaces = off
 ```
 
 - gnome shell拡張機能
-```
+
+```txt
 Launch new instance有効
 AlternateTab = on
 Applications menu = on
 window list = on
 ```
+
 - Iceweaselでそれぞれ以下にアクセスしてインストールし，ONにする
     - [TopIcons](https://extensions.gnome.org/extension/495/topicons/)
         - バージョンの不一致で動かなくなったら，``~/.local/share/gnome-shell/extensions/``にあるファイルを編集
@@ -103,25 +114,30 @@ window list = on
 ## 追加インストール
 
 ### はじめに
+
 - google-chrome
 - mendeley
-```
+
+```txt
 Unable to use Qt libraries in /usr/lib/x86_64-linux-gnu. Some components are missing:
         /usr/lib/x86_64-linux-gnu/libQtSvg.so.4.8.6
         /usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so.4.8.6
         /usr/lib/x86_64-linux-gnu/libQtWebKit.so.4
 To run Mendeley Desktop you may need to install the QtWebKit and QtSvg packages provided by your Linux distribution.
 ```
+
 というエラーが出たら，必要なモジュールをインストールする．
-```
+
+```sh
 sudo aptitude install libqt4-webkit libqt4-svg libqt4-xmlpatterns
 ```
+
 - dropbox
 - skype [参考](https://wiki.debian.org/skype)
 
-
 ### vlc
-```
+
+```sh
 sudo vi /etc/apt/sources.list
   >> deb http://www.deb-multimedia.org jessie main non-free
   >> /etc/debian_version のバージョンと一致するか確認すること
@@ -132,13 +148,16 @@ sudo aptitude install vlc libdvdcss2
 ```
 
 ### avconv
-```
+
+```sh
 sudo aptitude install libav-tools
 ```
 
 ### rtmpdump
+
 最新のレポジトリを使う
-```
+
+```sh
 sudo aptitude install iptables-persistent rtmpdump
 sudo vi /etc/iptables/rules.v4
 sudo  apt-get install zlib1g-dev libgnutls-dev libjpeg62-dev libssl-dev
@@ -150,12 +169,14 @@ sudo ldconfig
 ```
 
 純正flashじゃないとダウンロードできなかったので
-```
+
+```sh
 sudo apt-get install flashplugin-nonfree
 ```
 
 してから，
-```
+
+```sh
 sudo adduser rtmpuser
 sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -m owner \! --uid-owner  rtmpuser -j REDIRECT
 su rtmpuser
@@ -165,7 +186,8 @@ rtmpsuck
 - [参考](http://imoimo2010.blogspot.jp/2012/02/radikodebian60.html)
 
 ### cryptkeeper
-```
+
+```sh
 sudo aptitude install cryptkeeper
 sudo modprobe fuse
 自動起動するアプリに追加:cryptkeeper (コマンド gnome-session-properties)
@@ -176,14 +198,15 @@ sudo addgroup yuta-h fuse
 ### gnome-session-properties
 
 以下のチェックを外す
+
 - Caribou
 - Evolution
 - Zeitgeist Datahub
 - デスクトップの共有
 
-
 ### radiotray
-```
+
+```sh
 sudo aptitude install radiotray
 >  自動起動するアプリに追加 :radiotray
 ```
@@ -195,7 +218,8 @@ sudo gem install termtter
 -->
 
 ### you-get
-```
+
+```sh
 sudo pip3 install you-get
 vi ~/.netrc
   >>>
@@ -206,43 +230,48 @@ chmod 700 ~/.netrc
 ```
 
 ### gnucash
-```
+
+```sh
 sudo aptitude install gnucash python-gnucash
 sudo cpan
 > upgrade Finance::Quote
 ```
 
-
 ### LaTeX
-```
+
+```sh
 sudo apt-get install texlive texlive-lang-cjk xdvik-ja dvipsk-ja gv \
  texlive-fonts-recommended texlive-fonts-extra omake fam chktex \
  lacheck latex2rtf texlive-xetex texlive-bibtex-extra latexmk
 ```
 
 acroreadもインストールしておく．
-```
+
+```sh
 sudo dpkg --add-architecture i386
 sudo apt-get update
 sudo aptitude install acroread:i386 acroread-dictionary-en:i386 acroread-plugins:i386
 ```
 
 ### Bluetooth
-```
+
+```sh
 sudo apt-get install pulseaudio-module-bluetooth
 sudo shutdown -r now
 ```
 
 gnomeの音量設定タブからうまくbluetoothデバイスのプロファイルが選べない場合，
-```
+
+```sh
 sudo apt-get install pavucontrol
 ```
+
 で``pavucontrol``をインストールし，起動し，そこから選択する．
 [参考](https://forums.ubuntulinux.jp/viewtopic.php?pid=98775)
 
 うまく動かない時はサービスを再起動すると動いたことがあった．
 
-```
+```sh
 sudo service bluetooth restart
 sudo killall pulseaudio
 ```
@@ -250,7 +279,8 @@ sudo killall pulseaudio
 [参考](https://wiki.debian.org/BluetoothUser/a2dp)
 
 ### GPU動画再生
-```
+
+```sh
 sudo aptitude install libvdpau-dev
 sudo aptitude install libvdpau1
 sudo aptitude install vdpau-va-driver
@@ -269,16 +299,18 @@ sudo reboot
 vdpauinfo
 ```
 
-
 ### gvfs
+
 Sambaからvlcを起動できるようにする
-```
+
+```sh
 sudo aptitude install gvfs-fuse
 sudo shutdown -r now
 ```
 
 ### webcam
-```
+
+```sh
 $ cheese
 libv4l2: error got 4 consecutive frame decode errors, last error: v4l-convert: libjpeg error: End Of Image
 
@@ -287,12 +319,14 @@ streaming task paused, reason error (-5)
 ```
 
 ### playonlinux
-```
+
+```sh
 sudo aptitude install playonlinux
 ```
 
 ### scansnap S300
-```
+
+```sh
 sudo apt-get install sane xsane
 sudo mkdir /usr/share/sane/epjitsu
 sudo cp ~/300_0C00.nal /usr/share/sane/epjitsu/300_0C00.nal
@@ -301,12 +335,15 @@ sudo service saned restart
 ```
 
 ### jq
-```
+
+```sh
 wget https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 -O ~/local/bin/jq && chmod a+x ~/local/bin/jq
 ```
 
 ## その他の設定
+
 ### geditの設定
+
 - geditを起動して，上のgeditアイコンのところで右クリックし，設定をクリック
 - 以下の設定を行う
     - 行番号を表示
@@ -317,6 +354,7 @@ wget https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 -O ~/loc
 
 
 ### evinceの日本語フォントの設定
+
 ``KozMinPr6N-Regular.otf``と``KozGoPr6N-Medium.otf``をインストールしてから，
 ``~/.fonts.conf`` (または``~/.config/fontconfig/``)
 に以下の記述

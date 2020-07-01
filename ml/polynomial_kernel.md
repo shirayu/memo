@@ -1,19 +1,16 @@
 
+# 多項式カーネル
 
-
-# 多項式カーネル != 組み合わせ
+## 組み合わせとの関係
 
 <blockquote class="twitter-tweet" lang="ja"><p>2次の多項式カーネルを使うのと，自分で全素性の組み合わせを作って線形カーネルを使うのと，何が違うの??</p>&mdash; Yuta Hayashibeさん (@shirayu) <a href="https://twitter.com/shirayu/status/154113982020583426" data-datetime="2012-01-03T08:16:51+00:00">1月 3, 2012</a></blockquote>
-
 
 <blockquote class="twitter-tweet" data-in-reply-to="154113982020583426" lang="ja"><p>@<a href="https://twitter.com/shirayu">shirayu</a> 自由度．</p>&mdash; Kazushi Ikedaさん (@kazushi_) <a href="https://twitter.com/kazushi_/status/154119293515206656" data-datetime="2012-01-03T08:37:57+00:00">1月 3, 2012</a></blockquote>
 
 <blockquote class="twitter-tweet" data-in-reply-to="154121374821126144" lang="ja"><p>@<a href="https://twitter.com/shirayu">shirayu</a> 真の解がその空間に含まれているなら多項式カーネルの方がオーバーフィットしにくい．我田引水すると<a href="http://t.co/sWTRdPcj" title="http://hawaii.naist.jp/~kazushi/comments.htm">hawaii.naist.jp/~kazushi/comme…</a> の18と25．</p>&mdash; Kazushi Ikedaさん (@kazushi_) <a href="https://twitter.com/kazushi_/status/154123534694756352" data-datetime="2012-01-03T08:54:48+00:00">1月 3, 2012</a></blockquote>
 
-
 - 18 池田 和司: 多項式カーネルをもつカーネル法の幾何学と学習曲線, 電子情報通信学会論文誌, J86-D-II/7 (2003), 918-925, 情報論的学習理論特集号招待論文.
 - 25 Kazushi Ikeda: An Asymptotic Statistical Theory of Polynomial Kernel Methods, Neural Computation, 16/8 (2004), 1705-1719.
-
 
 # 2次の多項式カーネルと主問題
 
@@ -29,16 +26,10 @@
 
 <blockquote class="twitter-tweet" lang="ja"><p>@<a href="https://twitter.com/neubig">neubig</a> 多項式カーネルを陽に展開する話は以前にやってて、それを学習時にも適用しただけです。最終結果は多項式カーネルを使ったものと同一になります。配布するモデルはサイズの節約のために双対パラーメータにしてテスト時に近似的に展開します。<a href="http://t.co/9sHeQvpQ" title="http://acl.ldc.upenn.edu/acl2003/main/pdfs/Kudo.pdf">acl.ldc.upenn.edu/acl2003/main/p…</a></p>&mdash; Taku Kudoさん (@taku910) <a href="https://twitter.com/taku910/status/256973547757531136" data-datetime="2012-10-13T04:24:02+00:00">10月 13, 2012</a></blockquote>
 
-
-
 <blockquote class="twitter-tweet" data-in-reply-to="256973547757531136" lang="ja"><p>@<a href="https://twitter.com/taku910">taku910</a> ああ、なるほど！確かにサポートベクトルでない事例は最終的な重みに影響しないのでカーネルの計算だけですみますね。勉強になります。</p>&mdash; Graham Neubigさん (@neubig) <a href="https://twitter.com/neubig/status/257629233579429888" data-datetime="2012-10-14T23:49:30+00:00">10月 14, 2012</a></blockquote>
 
-
-<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
 # 補足
+
 - 線形計画問題
     - 目的関数と制約条件が全て線型性を有する最適化問題
 - 主問題（Primary problem）
@@ -55,4 +46,3 @@
     - 主問題と双対問題のいずれか一方が最適解を持つなら、もう一方も最適解を持ち、主問題の最小値と双対問題の最大値は一致する。
 
 [Wikipedia](http://ja.wikipedia.org/wiki/%E5%8F%8C%E5%AF%BE%E5%95%8F%E9%A1%8C)より
-

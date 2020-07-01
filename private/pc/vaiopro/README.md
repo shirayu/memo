@@ -1,5 +1,4 @@
 
-
 # Debian on Vaio Pro
 
 [Vaio Pro 13](http://store.sony.jp/Special/Computer/Vaio/P3/Ownermade.html)
@@ -13,7 +12,6 @@ Debianをインストールして常用することにした．
 - [VM](vm.md)
 - [ディスプレイ](display.md)
 
-
 ## その他
-- [京大ネットワークKUINSの設定](kuins.md)
 
+- [京大ネットワークKUINSの設定](kuins.md)

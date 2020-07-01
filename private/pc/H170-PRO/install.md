@@ -5,8 +5,8 @@
 
 - 時刻の設定
 - secure bootを無効にする
-  - ``secure boot: enable``となっている
-  - 鍵をすべて消すと``secure boot: disable``となる
+    - ``secure boot: enable``となっている
+    - 鍵をすべて消すと``secure boot: disable``となる
 - intel vtを有効にする
 
 ## インストール
@@ -52,4 +52,4 @@ sudo aptitude install firmware firmware-linux-nonfree firmware-realtek
 - fstabの設定
 - rsyncで古いディスクから色々コピー
 - 節電設定
-  - ``sudoedit /etc/hdparm.conf``
+    - ``sudoedit /etc/hdparm.conf``
