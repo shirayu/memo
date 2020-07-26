@@ -162,6 +162,13 @@ sudo virsh net-autostart default
 sudo virsh net-start default
 ```
 
+### KVM設定
+
+- windows10上でsshfs
+    - [billziss-gh/winfsp](https://github.com/billziss-gh/winfsp)
+    - [billziss-gh/sshfs-win](https://github.com/billziss-gh/sshfs-win)
+    - [SSHFS-Win-Manager](https://github.com/evsar3/sshfs-win-manager)
+
 ## その他
 
 - ルーターのポート変換の変更
