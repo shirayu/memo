@@ -30,15 +30,20 @@ gpasswd -a yuta-h autologin
 ## apt編集
 
 ```txt
-deb http://www.deb-multimedia.org buster main non-free
+deb http://debian-mirror.sakura.ne.jp/debian/ buster main contrib non-free
+
+deb http://security.debian.org/ buster/updates main contrib non-free
+deb-src http://security.debian.org/ buster/updates main contrib non-free
+
+
+deb http://debian-mirror.sakura.ne.jp/debian/ testing main contrib non-free
+deb-src http://debian-mirror.sakura.ne.jp/debian/ testing main contrib non-free
+
+deb [arch=amd64] https://download.docker.com/linux/debian buster stable
 ```
 
 ```sh
 sudo apt-get update
-...
-エラー:12 http://www.deb-multimedia.org buster InRelease
-  公開鍵を利用できないため、以下の署名は検証できませんでした: NO_PUBKEY 5C808C2B65558117
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5C808C2B65558117
 sudo apt-get dist-upgrade
 
 # nonfreeインストール
@@ -100,7 +105,7 @@ sudo wget https://raw.github.com/LiosK/Finance--Quote--YahooJapan/master/lib/Fin
 - [ターミナルの設定](https://zv-louis.hatenablog.com/entry/2018/05/28/120000)
 
 ```sh
- gsettings set org.gnome.Terminal.Legacy.Profile:/:0/ font "VL Gothic 14"
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$(gsettings get org.gnome.Terminal.ProfilesList default | tr -d \')/ font "VL Gothic 14"
 ```
 
 - 各種フォルダの名前を変更
