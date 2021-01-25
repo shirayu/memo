@@ -7,7 +7,7 @@
 | CPU  | Ryzen 5 3600 | Amazon |  26,644 (1066pt付) | 65W.第3世代, 6コア12スレッド.グラフィックスなし|
 | CPUファン | 虎徹 Mark II | Amazon | 4,106 (164pt付)| サイドフロー |
 | CPUグリス | Thermal Grizzly Kryonaut 1g | Amazon | 767 (31pt付) |  |
-| メモリ | CFD Crucial (Micron製) W4U3200CM-16G | DDR4-3200, 16GBx2 | amazon | 16,200 (162pt付) | |
+| メモリ | CFD Crucial (Micron製) W4U3200CM-16G DDR4-3200, 16GBx2 | amazon | 16,200 (162pt付) | |
 | ビデオカード | [GT1030-SL-2G-BRK](http://kakaku.com/item/K0000969293/) | amazon | 10326 (流用) | |
 | サウンドカード | オンボ | - | - | |
 | M.2 SSD | [ADATA XPG SX8200 Pro ASX8200PNP-512GT-C](https://www.amazon.co.jp/dp/B07SZ81FPM) | amazon |  7,599 | 500GB.PCIe3.0×4 NVMe1.3.エレコムOEM |
